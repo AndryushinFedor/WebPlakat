@@ -60,7 +60,7 @@ window.onload = function() {
         }
 
         let newAnimal = document.createElement('img');
-        newAnimal.src = '/pictures/' +fileName + '.png';
+        newAnimal.src = 'pictures/' +fileName + '.png';
         newAnimal.classList.add('animal');
         newAnimal.classList.add('an_'+ fileName);
         console.log(newAnimal.src);
