@@ -11,10 +11,10 @@ body {
 }
 
 h1 {
-  font-size: 80px;
+  font-size: max(4.5vw, 5vh);
   color: white;
   text-align: center;
-  padding-top: 10vh;
+  padding: 10vh 6vw 0;
 }
 
   /* .ground {
@@ -31,7 +31,7 @@ h1 {
 
 
 .oblako {
-  width: 60vh;
+  width: min(60vh, 85vw);
   align-items: center;
 }
 
@@ -44,7 +44,7 @@ h1 {
   width: 60vh;
   align-items: center;
   position: relative;
-  display: inline-block;
+  /* display: inline-block; */
 }
 .cloud_1 {
   width: 100%;
@@ -59,8 +59,9 @@ h1 {
   animation-direction: alternate;
 }
 @keyframes move_1 {
-  from {margin-left: 0;}
-  to {margin-left: 100%;}
+  from {}
+  50% {margin-left: 70%;}
+  to {margin-left: 0;}
 }
 .animal {
 
@@ -125,7 +126,13 @@ h1 {
   width: 60%;
   top: -30%;
 }
-
+.text {
+  position: absolute;
+  right: 100px;
+  width: 400px;
+  color: white;
+  font-size: 36px;
+}
 
 .oblako_2 {
 
@@ -213,4 +220,8 @@ h1 {
 
 .oblako_23 {
 
+}
+
+@media screen and (max-width: 420px) {
+  h1 {font-size: 24px;}
 }
