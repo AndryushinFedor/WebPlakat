@@ -15,6 +15,7 @@ h1 {
   color: white;
   text-align: center;
   padding: 10vh 6vw 0;
+  cursor: pointer;
 }
 
   /* .ground {
@@ -27,12 +28,71 @@ h1 {
 .header {
   height: 100vh;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.ground {
+  position: relative;
+  background-color: #C0E3B9;
+  height: 80vh;
+}
+
+.groundAnimals {
+  position: absolute;
+  width: 25vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.redpanda {
+  left: 10vh;
+  top: 30vh;
+  background-image: url(../pictures/redpanda_5.png);
+  height: 45vh;
+}
+
+.tiger {
+  left: 80vh;
+  top: 25vh;
+  background-image: url(../pictures/tiger_5.png);
+  height: 55vh;
+}
+
+.panda {
+  right: 10vh;
+  top: 25vh;
+  background-image: url(../pictures/panda_5.png);
+  height: 55vh;
 }
 
 
 .oblako {
   width: min(60vh, 85vw);
-  align-items: center;
+}
+.ave {
+  position: absolute;
+  top: 100px;
+  left:0;
+  background-image: url(../pictures/ave.svg);
+  width: 50px;
+  height: 40px;
+  animation: fly 3s steps(5) infinite, flyMove 6s linear infinite;
+  
+}
+@keyframes fly {
+  from {
+    background-position: 0 0;
+    
+  }
+  to {
+    background-position: 250px 0;
+    
+  }
+}
+@keyframes flyMove {
+  from { left:0;}
+  to {left: 100%}
 }
 
 .oblaka {
@@ -129,98 +189,27 @@ h1 {
 .text {
   position: absolute;
   right: 100px;
-  width: 400px;
+  width: 60vh;
   color: white;
   font-size: 36px;
 }
 
-.oblako_2 {
-
+.o_header_right {
+  position: absolute;
+  width: 45%;
+  right: 0vh;
+  top: 40vh;
+  transition: right 1s;
 }
 
-.oblako_3 {
-
+.o_header_left {
+  position: absolute;
+  width: 45%;
+  left: 0vh;
+  top: 40vh;
+  transition: left 1s;
 }
 
-.oblako_4 {
-
-}
-
-.oblako_5 {
-
-}
-
-.oblako_6 {
-
-}
-
-.oblako_7 {
-
-}
-
-.oblako_8 {
-
-}
-
-.oblako_9 {
-
-}
-
-.oblako_10 {
-
-}
-
-.oblako_11 {
-
-}
-
-.oblako_12 {
-
-}
-
-.oblako_13 {
-
-}
-
-.oblako_14 {
-
-}
-
-.oblako_15 {
-
-}
-
-.oblako_16 {
-
-}
-
-.oblako_17 {
-
-}
-
-.oblako_18 {
-
-}
-
-.oblako_19 {
-
-}
-
-.oblako_20 {
-
-}
-
-.oblako_21 {
-
-}
-
-.oblako_22 {
-
-}
-
-.oblako_23 {
-
-}
 
 @media screen and (max-width: 420px) {
   h1 {font-size: 24px;}

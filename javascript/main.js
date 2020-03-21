@@ -32,9 +32,7 @@ window.onload = function() {
         let y = Math.round(Math.random()* 50);
         clouds[index].style.marginTop = y + 'px';
         clouds[index].setAttribute('ocupated', 'false');
-        clouds[index].style.animationDuration = Math.round(Math.random() * 20 + 3) +'s';
-        clouds[index].style.color='red';
-        
+        clouds[index].style.animationDuration = Math.round(Math.random() * 20 + 3) +'s';        
 
 
         clouds[index].addEventListener('click', function(){
@@ -84,6 +82,37 @@ window.onload = function() {
         return newAnimal;
 
     }
-    
+
+    let gr_an = document.querySelectorAll('.groundAnimals');
+    let sharpen = Array();
+    function formAnimation(fileName) {
+        sharpen = [
+            {backgroundImage: 'url(pictures/'+fileName+'_5.png)'},
+            {backgroundImage: 'url(pictures/'+fileName+'_4.png)'},
+            {backgroundImage: 'url(pictures/'+fileName+'_3.png)'},
+            {backgroundImage: 'url(pictures/'+fileName+'_2.png)'},
+            {backgroundImage: 'url(pictures/'+fileName+'_1.png)'},
+
+        ];
+    }
+
+    for (let index = 0; index < gr_an.length; index++) {
+        gr_an[index].addEventListener('click', function(){
+            console.log(this.getAttribute('nameAn'));
+
+            formAnimation(this.getAttribute('nameAn'));
+            this.animate(sharpen, {
+                duration: 2300,
+                fill: 'forwards'
+            });
+
+        });
+    }
+
+    document.querySelector('h1').addEventListener('click', function(){
+        console.log('ddd');
+        document.querySelector('.o_header_left').style.left = '-70vh';
+        document.querySelector('.o_header_right').style.right = '-70vh';
+    });
     
 }
