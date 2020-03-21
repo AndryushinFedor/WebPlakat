@@ -36,6 +36,7 @@ h1 {
   position: relative;
   background-color: #C0E3B9;
   height: 80vh;
+  overflow: hidden;
 }
 
 .groundAnimals {
@@ -46,21 +47,21 @@ h1 {
 }
 
 .redpanda {
-  left: 10vh;
+  left: 10vw;
   top: 30vh;
   background-image: url(../pictures/redpanda_5.png);
   height: 45vh;
 }
 
 .tiger {
-  left: 80vh;
+  left: 40vw;
   top: 25vh;
   background-image: url(../pictures/tiger_5.png);
   height: 55vh;
 }
 
 .panda {
-  right: 10vh;
+  right: 10vw;
   top: 25vh;
   background-image: url(../pictures/panda_5.png);
   height: 55vh;
@@ -98,6 +99,7 @@ h1 {
 .oblaka {
  overflow: hidden;
  padding-top: 10vh;
+ padding-bottom: 10vh;
 }
 
 .oblako_1 {
@@ -189,7 +191,7 @@ h1 {
 .text {
   position: absolute;
   right: 100px;
-  width: 60vh;
+  width: 80vw;
   color: white;
   font-size: 36px;
 }
@@ -210,7 +212,42 @@ h1 {
   transition: left 1s;
 }
 
+@media screen and (max-width: 768px) and (orientation: portrait) {
 
-@media screen and (max-width: 420px) {
-  h1 {font-size: 24px;}
+  .o_header_left {
+    top: 50vh;
+    width: 65vw;
+    left: -10vw;
+  }
+
+  .o_header_right {
+    top: 50vh;
+    width: 65vw;
+    right: -10vw;
+  }
+
+  .text {
+    font-size: 3vw;
+  }
+
+  .ground {
+    height: 50vh;
+  }
+
+}
+
+
+@media screen and (max-width: 475px) {
+  h1 {
+    font-size: 24px;
+    padding: 25vh 6vw 0;
+  }
+
+  .o_header_right {
+    top: 60vh;
+    width: 65vw;
+    right: -10vw;
+  }
+
+
 }
