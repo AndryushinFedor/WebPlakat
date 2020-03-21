@@ -37,6 +37,7 @@ h1 {
   background-color: #C0E3B9;
   height: 80vh;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .groundAnimals {
@@ -79,7 +80,6 @@ h1 {
   width: 50px;
   height: 40px;
   animation: fly 3s steps(5) infinite, flyMove 6s linear infinite;
-  
 }
 @keyframes fly {
   from {
@@ -94,6 +94,26 @@ h1 {
 @keyframes flyMove {
   from { left:0;}
   to {left: 100%}
+}
+
+.ave_2 {
+  position: absolute;
+  top: 130px;
+  left: 30px;
+  background-image: url(../pictures/ave.svg);
+  width: 50px;
+  height: 40px;
+  animation: fly 3s steps(5) infinite, flyMove 8s linear infinite;
+}
+
+.ave_3 {
+  position: absolute;
+  top: 150px;
+  left: 80px;
+  background-image: url(../pictures/ave.svg);
+  width: 50px;
+  height: 40px;
+  animation: fly 3s steps(5) infinite, flyMove 5s linear infinite;
 }
 
 .oblaka {
@@ -191,7 +211,7 @@ h1 {
 .text {
   position: absolute;
   right: 100px;
-  width: 80vw;
+  width: 40vw;
   color: white;
   font-size: 36px;
 }
@@ -201,7 +221,7 @@ h1 {
   width: 45%;
   right: 0vh;
   top: 40vh;
-  transition: right 1s;
+  transition: right 2s;
 }
 
 .o_header_left {
@@ -209,7 +229,7 @@ h1 {
   width: 45%;
   left: 0vh;
   top: 40vh;
-  transition: left 1s;
+  transition: left 2s;
 }
 
 @media screen and (max-width: 768px) and (orientation: portrait) {
