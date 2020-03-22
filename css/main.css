@@ -27,7 +27,7 @@ h1 {
 
 .ground {
   position: relative;
-  background-color: #C0E3B9;
+  background-color: #73AA68;
   height: 80vh;
   overflow: hidden;
   cursor: pointer;
@@ -203,7 +203,7 @@ h1 {
 }
 .text {
   position: absolute;
-  right: 100px;
+  right: 0px;
   width: 40vw;
   color: white;
   font-size: 36px;
@@ -212,7 +212,7 @@ h1 {
 .o_header_right {
   position: absolute;
   width: 45%;
-  right: 0vh;
+  right: -30vh;
   top: 40vh;
   transition: right 2s;
 }
@@ -236,7 +236,7 @@ h1 {
   .o_header_right {
     top: 50vh;
     width: 65vw;
-    right: -10vw;
+    right: -20vw;
   }
 
   .text {
@@ -259,7 +259,7 @@ h1 {
   .o_header_right {
     top: 60vh;
     width: 65vw;
-    right: -10vw;
+    right: -30vw;
   }
 
 

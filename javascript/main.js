@@ -110,9 +110,13 @@ window.onload = function() {
     }
 
     document.querySelector('h1').addEventListener('click', function(){
-        console.log('ddd');
         document.querySelector('.o_header_left').style.left = '-70vh';
         document.querySelector('.o_header_right').style.right = '-70vh';
     });
+
+    let text_2 = Array('Красных панд осталось не более 1000 особей.',
+    'Амурских тигров осталось всего 2500 особей.',
+    'Китайских панд осталось в мире не более 200 особей.');
+
     
 }
