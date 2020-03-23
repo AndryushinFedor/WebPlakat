@@ -61,6 +61,13 @@ h1 {
   height: 55vh;
 }
 
+.text_2 {
+  position: absolute;
+  font-size: 2.5vh;
+  color: white;
+  top: -6vh;
+}
+
 
 .oblako {
   width: min(60vh, 85vw);
@@ -260,6 +267,18 @@ h1 {
     top: 60vh;
     width: 65vw;
     right: -30vw;
+  }
+
+  .text_2 {
+    font-size: 2vw;
+  }
+
+  .redpanda {
+    left: 3vw;
+  }
+
+  .panda {
+    right: 2vw;
   }
 
 
