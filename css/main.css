@@ -93,7 +93,7 @@ h1 {
   position: absolute;
   top: 130px;
   left: 30px;
-  background-image: url(../pictures/ave.svg);
+  background-image: url(../pictures/ave2.svg);
   width: 50px;
   height: 40px;
   animation: fly 3s steps(5) infinite, flyMove 8s linear infinite;

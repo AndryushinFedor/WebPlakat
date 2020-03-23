@@ -96,10 +96,26 @@ window.onload = function() {
         ];
     }
 
+    let text_2 = Array('Красных панд осталось не более 1000 особей.',
+    'Амурских тигров осталось всего 2500 особей.',
+    'Китайских панд осталось в мире не более 200 особей.');
     for (let index = 0; index < gr_an.length; index++) {
         gr_an[index].addEventListener('click', function(){
             console.log(this.getAttribute('nameAn'));
+            switch (this.getAttribute('nameAn')) {
+                case 'redpanda':
+                    console.log(this.querySelector('.text_2'));
+                    this.querySelector('.text_2').innerText = text_2[0];
+                    break;
+            case 'tiger':
+                    this.querySelector('.text_2').innerText = text_2[1];
+                    break;
 
+            case 'panda':
+                    this.querySelector('.text_2').innerText = text_2[2];
+                    break;
+                
+            }
             formAnimation(this.getAttribute('nameAn'));
             this.animate(sharpen, {
                 duration: 2300,
@@ -108,15 +124,14 @@ window.onload = function() {
 
         });
     }
+    
 
     document.querySelector('h1').addEventListener('click', function(){
         document.querySelector('.o_header_left').style.left = '-70vh';
         document.querySelector('.o_header_right').style.right = '-70vh';
     });
 
-    let text_2 = Array('Красных панд осталось не более 1000 особей.',
-    'Амурских тигров осталось всего 2500 особей.',
-    'Китайских панд осталось в мире не более 200 особей.');
+ 
 
     
 }
