@@ -79,7 +79,7 @@ h1 {
   background-image: url(../pictures/ave.svg);
   width: 50px;
   height: 40px;
-  animation: fly 3s steps(5) infinite, flyMove 6s linear infinite;
+  animation: fly 3s steps(5) infinite, flyMove 5s linear infinite;
 }
 
 @keyframes fly {
@@ -105,7 +105,7 @@ h1 {
   background-image: url(../pictures/ave2.svg);
   width: 50px;
   height: 40px;
-  animation: fly 3s steps(5) infinite, flyMove 8s linear infinite;
+  animation: fly 6s steps(5) infinite, flyMove 8s linear infinite;
 }
 
 .ave_3 {
@@ -115,7 +115,27 @@ h1 {
   background-image: url(../pictures/ave.svg);
   width: 50px;
   height: 40px;
+  animation: fly 2s steps(5) infinite, flyMove 6s linear infinite;
+}
+
+.ave_4 {
+  position: absolute;
+  top: 80vh;
+  left: 80px;
+  background-image: url(../pictures/ave2.svg);
+  width: 50px;
+  height: 40px;
   animation: fly 5s steps(5) infinite, flyMove 5s linear infinite;
+}
+
+.ave_5 {
+  position: absolute;
+  top: 82vh;
+  left: 80px;
+  background-image: url(../pictures/ave2.svg);
+  width: 50px;
+  height: 40px;
+  animation: fly 7s steps(5) infinite, flyMove 6s linear infinite;
 }
 
 .oblaka {
