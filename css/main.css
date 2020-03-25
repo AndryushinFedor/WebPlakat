@@ -1,6 +1,5 @@
 @import "reset.css";
 body {
-    /* overflow: hidden; */
     background-color: #38ABFF;
     font-family: 'PT Mono', monospace;
   }
@@ -66,12 +65,13 @@ h1 {
   font-size: 2.5vh;
   color: white;
   top: -6vh;
+  padding-right: 2vw;
 }
-
 
 .oblako {
   width: min(60vh, 85vw);
 }
+
 .ave {
   position: absolute;
   top: 100px;
@@ -81,6 +81,7 @@ h1 {
   height: 40px;
   animation: fly 3s steps(5) infinite, flyMove 6s linear infinite;
 }
+
 @keyframes fly {
   from {
     background-position: 0 0;
@@ -91,6 +92,7 @@ h1 {
     
   }
 }
+
 @keyframes flyMove {
   from { left:0;}
   to {left: 100%}
@@ -128,9 +130,11 @@ h1 {
   position: relative;
   /* display: inline-block; */
 }
+
 .cloud_1 {
   width: 100%;
 }
+
 .move {
   transition: all 1s;
   animation-name: move_1;
@@ -140,13 +144,14 @@ h1 {
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
+
 @keyframes move_1 {
   from {}
   50% {margin-left: 70%;}
   to {margin-left: 0;}
 }
-.animal {
 
+.animal {
   position: absolute;
   width: 30%;
   left: 50%;
@@ -154,6 +159,7 @@ h1 {
   opacity: 0;
   transition: opacity 2s;
 }
+
 .an_1 {
   width: 70%;
   top: -30%;
@@ -208,6 +214,7 @@ h1 {
   width: 60%;
   top: -30%;
 }
+
 .text {
   position: absolute;
   right: 0px;
@@ -247,15 +254,22 @@ h1 {
   }
 
   .text {
-    font-size: 3vw;
+    font-size: 2vw;
   }
 
   .ground {
-    height: 50vh;
+    height: 40vh;
+  }
+
+  .text_2 {
+    font-size: 2vw;
+  }
+
+  .groundAnimals {
+    top: 10vh;
   }
 
 }
-
 
 @media screen and (max-width: 475px) {
   h1 {
