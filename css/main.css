@@ -283,3 +283,16 @@ h1 {
 
 
 }
+
+  @media screen and (max-width: 375px) {
+  
+  .o_header_left {
+    top: 48vh;
+  }
+
+  .o_header_right {
+    top: 56vh;
+  }
+    
+
+  }
